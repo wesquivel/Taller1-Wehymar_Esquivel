@@ -1,0 +1,73 @@
+-------------------------------------------------------------
+
+** Crear cuenta **
+
+@BeforeSuite
+//poseer email
+
+@BeforeClass
+// ingresar a la plataforma
+
+@BeforeMethod
+//Acceder a la pagina de creacion de la cuenta
+
+@Test
+//Crear cuenta
+ 
+ - - - -  Fin Test Case 1 - - - - -
+ 
+ @AfterMethod
+ //obtener confirmación de creacion de cuenta
+ 
+ @AfterClass
+ //quedar dentro de la cuenta creada o en pagina de loging para acceder
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+** Iniciar Sesion **
+
+@BeforeSuite
+//Poseer usuario y contraseña
+
+@BeforeClass
+// ingresar a la pagina de logging
+
+@BeforeMethod
+//Ingresar usuario y contraseña
+
+@Test
+//validar credenciales y sesion abierta
+ 
+ - - - -  Fin Test Case 1 - - - - -
+ 
+ 
+ @AfterClass
+ //quedar dentro de la sesion
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+** Cancelar cuenta **
+
+@BeforeSuite
+//Ingresar a la sesion
+
+@BeforeClass
+// acceder al link eliminar cuenta
+
+@BeforeMethod
+//Solicitar eliminacion de cuenta
+
+@Test
+//Cuenta eliminada
+ 
+ - - - -  Fin Test Case 1 - - - - -
+ 
+ @AfterMethod
+ //confirmación de eliminacion de cuenta
+ 
+ --------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
